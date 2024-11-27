@@ -37,6 +37,17 @@ function renderCharacter(characters) {
 
 
 
+const audio = document.getElementById('background-music');
+const playButton = document.getElementById('play-music');
+
+// Automatisch starten (falls erlaubt):
+audio.volume = 0.5;
+audio.play().catch(() => {
+    console.log("Autoplay blockiert. Benutzeraktion erforderlich.");
+});
+
+
+
 
 
 
